@@ -1,4 +1,4 @@
-.macro farg a1=$0 a2=$0 a3=$0 a4=$0 a5=$0 a6=$0
+.macro farg a1=%rdi a2=%rsi a3=%rdx a4=%r10 a5=%r8 a6=%r9
 	push \a1
 	push \a2
 	push \a3

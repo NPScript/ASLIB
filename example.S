@@ -1,8 +1,7 @@
 .include "io.S"
 
-_start:
-	fcall putstring $msg
-	fscall $exit
+.global _start
 
-msg:
-	.asciz "Hello World\n"
+_start:
+	fcall putuint $3141
+	fscall $exit
