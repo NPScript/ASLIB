@@ -3,5 +3,5 @@
 .global _start
 
 _start:
-	fcall putuint $3141
+	fcall putint $-3141
 	fscall $exit

@@ -52,3 +52,33 @@ putuint:
 
 	ret
 
+putint:
+	mov %rdi, %rax
+	mov %rsp, %rbx
+	mov $10, %r10
+
+	test %rax, %rax
+	jns putint_push_loop
+
+	mov $-1, %r10
+	mul %r10
+	push %rax
+	fcall putchar $'-'
+	pop %rax
+	mov $10, %r10
+
+	putint_push_loop:
+	xor %rdx, %rdx
+	div %r10
+	push %rdx
+	test %rax, %rax
+	jnz putint_push_loop
+
+	putint_print_loop:
+	pop %rax
+	add $'0', %rax
+	fcall putchar %rax
+	cmp %rbx, %rsp
+	jne putint_print_loop
+
+	ret
