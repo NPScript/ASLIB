@@ -14,16 +14,16 @@ It is written in the *AT&T* syntax.
 
 This features should be contained by this library:
 
-[x] Macros to make function-calls easier
-[-] Printing functions
-	[x] Character printing
-	[x] String printing
-	[x] Integer printing
-	[ ] Format printing
-[ ] String Manipulations
-[ ] File reading and writing support
-[ ] Filesystem functions
-[ ] Arg Helper
+- [x] Macros to make function-calls easier
+- [-] Printing functions
+	- [x] Character printing
+	- [x] String printing
+	- [x] Integer printing
+	- [ ] Format printing
+- [ ] String Manipulations
+- [ ] File reading and writing support
+- [ ] Filesystem functions
+- [ ] Arg Helper
 
 # Function calls
 
